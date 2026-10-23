@@ -1,0 +1,202 @@
+/* ============================================================
+   分享卡样式：固定像素尺寸（360 宽，导出 ×3 = 1080 宽）
+   中文由浏览器字体渲染，导出为图片时不会缺字。
+   ============================================================ */
+
+.share-card {
+  width: 360px;
+  position: relative;
+  background: #f4efe4;
+  color: #14110f;
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+  overflow: hidden;
+  /* 纸张纹理 */
+  background-image: radial-gradient(rgba(20, 17, 15, 0.045) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+.share-1x1 {
+  height: 360px;
+}
+
+.share-3x4 {
+  height: 480px;
+}
+
+.share-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid #d8cdb8;
+  margin: 0;
+}
+
+/* 双线内框，编辑部味道 */
+.share-inner::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(20, 17, 15, 0.22);
+  pointer-events: none;
+}
+
+.share-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #14110f;
+}
+
+.share-mark {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: #14110f;
+  color: #f4efe4;
+  font-family: 'Songti SC', 'Noto Serif SC', 'SimSun', serif;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.share-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.share-brand-text b {
+  font-family: 'Songti SC', 'Noto Serif SC', 'SimSun', serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.share-brand-text i {
+  font-style: normal;
+  font-family: 'SF Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 6px;
+  letter-spacing: 0.16em;
+  color: #6b6157;
+}
+
+.share-body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.share-eyebrow {
+  margin: 0 0 4px;
+  font-family: 'SF Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 6.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a3402f;
+}
+
+.share-input {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #3a332d;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.share-rule {
+  height: 1px;
+  background: #cfc4ad;
+  margin: 9px 0 8px;
+}
+
+.share-label {
+  margin: 0 0 4px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #c8291b;
+  text-transform: uppercase;
+}
+
+.share-main {
+  margin: 0;
+  font-family: 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  color: #14110f;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.share-3x4 .share-main {
+  -webkit-line-clamp: 6;
+}
+
+.share-others {
+  margin: 10px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px dashed #cfc4ad;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.share-others li {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  font-size: 9px;
+  line-height: 1.45;
+  color: #3a332d;
+  overflow: hidden;
+}
+
+.share-others span {
+  flex: none;
+  font-weight: 700;
+  font-size: 8px;
+  padding: 0 4px;
+  border: 1px solid #b8ab93;
+  border-radius: 999px;
+  color: #6b6157;
+}
+
+.share-others em {
+  font-style: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.share-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #cfc4ad;
+  font-family: 'SF Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 6.5px;
+  letter-spacing: 0.1em;
+  color: #6b6157;
+}
+
+.share-foot-right {
+  color: #a3402f;
+}

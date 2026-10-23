@@ -1,0 +1,53 @@
+{
+  "name": "plain-speak-bureau",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "人话翻译局 —— 把绕弯子的话翻译成人话。19 类意图 · 9 场景 · 6 口气 · 默认离线",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node server/index.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "node server/index.mjs",
+    "typecheck": "tsc -b",
+    "test": "node scripts/selftest.mjs",
+    "test:api": "node scripts/api-smoke.mjs",
+    "test:ai": "node scripts/ai-path.mjs",
+    "test:tone": "node scripts/tone-audit.mjs",
+    "test:sample": "node scripts/sample-dump.mjs",
+    "test:e2e": "node scripts/e2e.mjs",
+    "test:layout": "node scripts/layout-audit.mjs",
+    "test:all": "npm run build && npm run test && npm run test:tone && npm run test:api && npm run test:ai && npm run test:e2e && npm run test:layout"
+  },
+  "dependencies": {
+    "html-to-image": "1.11.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "esbuild": "0.21.5",
+    "puppeteer-core": "23.11.1",
+    "typescript": "5.6.3",
+    "vite": "5.4.11"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  },
+  "homepage": "https://iiiiiiiiiiiiiKK.github.io/plain-speak-bureau/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiiiiiiiiiiiiKK/plain-speak-bureau.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iiiiiiiiiiiiiKK/plain-speak-bureau/issues"
+  },
+  "author": {
+    "name": "0xkillcoin",
+    "url": "https://x.com/0xkillcoin"
+  },
+  "license": "MIT"
+}

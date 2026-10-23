@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-ssr/
+.selftest-tmp/
+.e2e-out/
+.layout-out/
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+src/**/*.tsbuildinfo
