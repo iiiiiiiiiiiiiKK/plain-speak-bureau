@@ -13,6 +13,7 @@
 <img src="https://img.shields.io/badge/dependencies-3-brightgreen?style=flat-square" alt="3 dependencies" />
 <img src="https://img.shields.io/badge/tests-2809%20assertions%20passed-success?style=flat-square" alt="tests" />
 <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT" />
+<a href="https://iiiiiiiiiiiiiKK.github.io/plain-speak-bureau/"><img src="https://img.shields.io/badge/demo-GitHub%20Pages-2ea44f?style=flat-square" alt="Live demo" /></a>
 
 </div>
 
@@ -422,6 +423,7 @@ VITE_API_ORIGIN=https://api.your.site npm run build
 
 ## 链接
 
+- **在线体验**：<https://iiiiiiiiiiiiiKK.github.io/plain-speak-bureau/>
 - **作者**：[𝕏 @0xkillcoin](https://x.com/0xkillcoin)
 - **问题反馈**：[Issues](../../issues)
 
